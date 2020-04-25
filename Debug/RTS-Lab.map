@@ -1,0 +1,1080 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+                              ./Debug/application.c.o (atoi)
+c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+                              c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o) (_strtol_r)
+c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-ctype_.o)
+                              c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o) (_ctype_)
+c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                              c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o) (_impure_ptr)
+
+Allocating common symbols
+Common symbol       size              file
+
+otable              0xc               ./Debug/TinyTimber.c.o
+upcoming            0x4               ./Debug/TinyTimber.c.o
+threads             0x50              ./Debug/TinyTimber.c.o
+mtable              0xc               ./Debug/TinyTimber.c.o
+thread0             0x14              ./Debug/TinyTimber.c.o
+messages            0x2d0             ./Debug/TinyTimber.c.o
+__heap_end          0x4               ./Debug/TinyTimber.c.o
+stacks              0x8000            ./Debug/TinyTimber.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x20000000         0x0001c000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./Debug/driver_src_stm32f4xx_syscfg.c.o
+LOAD ./Debug/driver_src_stm32f4xx_usart.c.o
+LOAD ./Debug/driver_src_stm32f4xx_gpio.c.o
+LOAD ./Debug/driver_src_stm32f4xx_dac.c.o
+LOAD ./Debug/driver_src_stm32f4xx_exti.c.o
+LOAD ./Debug/TinyTimber.c.o
+LOAD ./Debug/driver_src_stm32f4xx_can.c.o
+LOAD ./Debug/startup.c.o
+LOAD ./Debug/application.c.o
+LOAD ./Debug/driver_src_stm32f4xx_tim.c.o
+LOAD ./Debug/sciTinyTimber.c.o
+LOAD ./Debug/dispatch.s.o
+LOAD ./Debug/driver_src_stm32f4xx_rcc.c.o
+LOAD ./Debug/canTinyTimber.c.o
+LOAD c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libstdc++_nano.a
+LOAD c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+START GROUP
+LOAD c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a
+END GROUP
+
+.text           0x20000000     0x6fdc
+                0x20000000                . = ALIGN (0x4)
+ *(.start_section)
+ .start_section
+                0x20000000       0x1c ./Debug/startup.c.o
+                0x20000000                startup
+ *(.text)
+ .text          0x2000001c      0x154 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+                0x2000001c                SYSCFG_DeInit
+                0x20000038                SYSCFG_MemoryRemapConfig
+                0x20000058                SYSCFG_MemorySwappingBank
+                0x20000078                SYSCFG_EXTILineConfig
+                0x200000fc                SYSCFG_ETH_MediaInterfaceConfig
+                0x2000011c                SYSCFG_CompensationCellCmd
+                0x2000013c                SYSCFG_GetCompensationCellStatus
+ .text          0x20000170      0x970 ./Debug/driver_src_stm32f4xx_usart.c.o
+                0x20000170                USART_DeInit
+                0x20000288                USART_Init
+                0x200003fc                USART_StructInit
+                0x20000436                USART_ClockInit
+                0x2000048c                USART_ClockStructInit
+                0x200004b8                USART_Cmd
+                0x200004f8                USART_SetPrescaler
+                0x20000532                USART_OverSampling8Cmd
+                0x20000576                USART_OneBitMethodCmd
+                0x200005b6                USART_SendData
+                0x200005da                USART_ReceiveData
+                0x200005fa                USART_SetAddress
+                0x20000634                USART_ReceiverWakeUpCmd
+                0x20000674                USART_WakeUpConfig
+                0x200006ac                USART_LINBreakDetectLengthConfig
+                0x200006e4                USART_LINCmd
+                0x20000724                USART_SendBreak
+                0x20000748                USART_HalfDuplexCmd
+                0x20000788                USART_SetGuardTime
+                0x200007c4                USART_SmartCardCmd
+                0x20000804                USART_SmartCardNACKCmd
+                0x20000844                USART_IrDAConfig
+                0x2000087c                USART_IrDACmd
+                0x200008bc                USART_DMACmd
+                0x20000904                USART_ITConfig
+                0x20000994                USART_GetFlagStatus
+                0x200009cc                USART_ClearFlag
+                0x200009ee                USART_GetITStatus
+                0x20000aa4                USART_ClearITPendingBit
+ .text          0x20000ae0      0x4d8 ./Debug/driver_src_stm32f4xx_gpio.c.o
+                0x20000ae0                GPIO_DeInit
+                0x20000c44                GPIO_Init
+                0x20000d62                GPIO_StructInit
+                0x20000d96                GPIO_PinLockConfig
+                0x20000dda                GPIO_ReadInputDataBit
+                0x20000e0e                GPIO_ReadInputData
+                0x20000e28                GPIO_ReadOutputDataBit
+                0x20000e5c                GPIO_ReadOutputData
+                0x20000e76                GPIO_SetBits
+                0x20000e94                GPIO_ResetBits
+                0x20000eb2                GPIO_WriteBit
+                0x20000ee2                GPIO_Write
+                0x20000f00                GPIO_ToggleBits
+                0x20000f24                GPIO_PinAFConfig
+ .text          0x20000fb8      0x450 ./Debug/driver_src_stm32f4xx_dac.c.o
+                0x20000fb8                DAC_DeInit
+                0x20000fd4                DAC_Init
+                0x2000103c                DAC_StructInit
+                0x20001068                DAC_Cmd
+                0x200010b4                DAC_SoftwareTriggerCmd
+                0x20001104                DAC_DualSoftwareTriggerCmd
+                0x20001140                DAC_WaveGenerationCmd
+                0x2000118c                DAC_SetChannel1Data
+                0x200011c4                DAC_SetChannel2Data
+                0x200011fc                DAC_SetDualChannelData
+                0x20001254                DAC_GetDataOutputValue
+                0x20001288                DAC_DMACmd
+                0x200012d8                DAC_ITConfig
+                0x20001324                DAC_GetFlagStatus
+                0x20001360                DAC_ClearFlag
+                0x20001388                DAC_GetITStatus
+                0x200013e0                DAC_ClearITPendingBit
+ .text          0x20001408      0x210 ./Debug/driver_src_stm32f4xx_exti.c.o
+                0x20001408                EXTI_DeInit
+                0x2000143c                EXTI_Init
+                0x20001520                EXTI_StructInit
+                0x2000154c                EXTI_GenerateSWInterrupt
+                0x20001570                EXTI_GetFlagStatus
+                0x200015a4                EXTI_ClearFlag
+                0x200015c4                EXTI_GetITStatus
+                0x200015f8                EXTI_ClearITPendingBit
+ .text          0x20001618      0xf54 ./Debug/TinyTimber.c.o
+                0x200016a0                DUMP
+                0x200016da                DUMPH
+                0x20001738                DUMPD
+                0x200017dc                sei
+                0x200017fa                cli
+                0x20001818                _sbrk
+                0x2000185c                SETSTACK
+                0x200018c4                SETPC
+                0x200018e8                TIMER_INIT
+                0x20001980                DUMPC
+                0x200019b4                vect_USART1
+                0x20001a1c                vect_CAN1
+                0x20001a84                vect_EXTI9_5
+                0x20001aec                enqueueByDeadline
+                0x20001b44                enqueueByBaseline
+                0x20001b9c                dequeue
+                0x20001bec                dequeue_pool
+                0x20001c3c                insert
+                0x20001c60                push
+                0x20001c84                pop
+                0x20001d06                vect_TIM5
+                0x20001d98                __svc_dispatch
+                0x20001da8                __pendSV_dispatch
+                0x20001f18                async
+                0x20002054                sync
+                0x20002160                ABORT
+                0x20002214                T_RESET
+                0x20002250                T_SAMPLE
+                0x20002290                CURRENT_OFFSET
+                0x2000243c                install
+                0x20002508                tinytimber
+ .text          0x2000256c     0x11b4 ./Debug/driver_src_stm32f4xx_can.c.o
+                0x2000256c                CAN_DeInit
+                0x200025b4                CAN_Init
+                0x20002756                CAN_FilterInit
+                0x200028dc                CAN_StructInit
+                0x20002932                CAN_SlaveStartBank
+                0x20002994                CAN_DBGFreeze
+                0x200029cc                CAN_TTComModeCmd
+                0x20002a64                CAN_Transmit
+                0x20002c06                CAN_TransmitStatus
+                0x20002d0c                CAN_CancelTransmit
+                0x20002d64                CAN_Receive
+                0x20002ee0                CAN_FIFORelease
+                0x20002f18                CAN_MessagePending
+                0x20002f62                CAN_OperatingModeRequest
+                0x2000305e                CAN_Sleep
+                0x20003098                CAN_WakeUp
+                0x200030ee                CAN_GetLastErrorCode
+                0x20003114                CAN_GetReceiveErrorCounter
+                0x20003136                CAN_GetLSBTransmitErrorCounter
+                0x20003158                CAN_ITConfig
+                0x20003194                CAN_GetFlagStatus
+                0x20003262                CAN_ClearFlag
+                0x200032d4                CAN_GetITStatus
+                0x20003538                CAN_ClearITPendingBit
+ .text          0x20003720      0x32c ./Debug/startup.c.o
+ .text          0x20003a4c      0x194 ./Debug/application.c.o
+                0x20003a4c                receiver
+                0x20003a9c                reader
+                0x20003ae4                startApp
+                0x20003b64                main
+                0x20003ba4                handleInput
+ .text          0x20003be0     0x1c1c ./Debug/driver_src_stm32f4xx_tim.c.o
+                0x20003be0                TIM_DeInit
+                0x20003da0                TIM_TimeBaseInit
+                0x20003e78                TIM_TimeBaseStructInit
+                0x20003eac                TIM_PrescalerConfig
+                0x20003ed4                TIM_CounterModeConfig
+                0x20003f0c                TIM_SetCounter
+                0x20003f28                TIM_SetAutoreload
+                0x20003f44                TIM_GetCounter
+                0x20003f5c                TIM_GetPrescaler
+                0x20003f76                TIM_UpdateDisableConfig
+                0x20003fb6                TIM_UpdateRequestConfig
+                0x20003ff6                TIM_ARRPreloadConfig
+                0x20004036                TIM_SelectOnePulseMode
+                0x2000406e                TIM_SetClockDivision
+                0x200040a6                TIM_Cmd
+                0x200040e6                TIM_OC1Init
+                0x200041dc                TIM_OC2Init
+                0x200042ec                TIM_OC3Init
+                0x200043f8                TIM_OC4Init
+                0x200044c8                TIM_OCStructInit
+                0x2000450c                TIM_SelectOCxM
+                0x200045c2                TIM_SetCompare1
+                0x200045de                TIM_SetCompare2
+                0x200045fa                TIM_SetCompare3
+                0x20004616                TIM_SetCompare4
+                0x20004632                TIM_ForcedOC1Config
+                0x2000466a                TIM_ForcedOC2Config
+                0x200046a6                TIM_ForcedOC3Config
+                0x200046de                TIM_ForcedOC4Config
+                0x2000471a                TIM_OC1PreloadConfig
+                0x20004752                TIM_OC2PreloadConfig
+                0x2000478e                TIM_OC3PreloadConfig
+                0x200047c6                TIM_OC4PreloadConfig
+                0x20004802                TIM_OC1FastConfig
+                0x2000483a                TIM_OC2FastConfig
+                0x20004876                TIM_OC3FastConfig
+                0x200048ae                TIM_OC4FastConfig
+                0x200048ea                TIM_ClearOC1Ref
+                0x20004922                TIM_ClearOC2Ref
+                0x2000495e                TIM_ClearOC3Ref
+                0x20004996                TIM_ClearOC4Ref
+                0x200049d2                TIM_OC1PolarityConfig
+                0x20004a0a                TIM_OC1NPolarityConfig
+                0x20004a42                TIM_OC2PolarityConfig
+                0x20004a7e                TIM_OC2NPolarityConfig
+                0x20004aba                TIM_OC3PolarityConfig
+                0x20004af6                TIM_OC3NPolarityConfig
+                0x20004b32                TIM_OC4PolarityConfig
+                0x20004b6e                TIM_CCxCmd
+                0x20004bc4                TIM_CCxNCmd
+                0x20004c1a                TIM_ICInit
+                0x20004cc2                TIM_ICStructInit
+                0x20004cf4                TIM_PWMIConfig
+                0x20004dac                TIM_GetCapture1
+                0x20004dc4                TIM_GetCapture2
+                0x20004ddc                TIM_GetCapture3
+                0x20004df4                TIM_GetCapture4
+                0x20004e0c                TIM_SetIC1Prescaler
+                0x20004e44                TIM_SetIC2Prescaler
+                0x20004e80                TIM_SetIC3Prescaler
+                0x20004eb8                TIM_SetIC4Prescaler
+                0x20004ef4                TIM_BDTRConfig
+                0x20004f44                TIM_BDTRStructInit
+                0x20004f82                TIM_CtrlPWMOutputs
+                0x20004fce                TIM_SelectCOM
+                0x2000500e                TIM_CCPreloadControl
+                0x2000504e                TIM_ITConfig
+                0x20005096                TIM_GenerateEvent
+                0x200050b4                TIM_GetFlagStatus
+                0x200050ec                TIM_ClearFlag
+                0x2000510e                TIM_GetITStatus
+                0x20005162                TIM_ClearITPendingBit
+                0x20005184                TIM_DMAConfig
+                0x200051ae                TIM_DMACmd
+                0x200051f6                TIM_SelectCCDMA
+                0x20005236                TIM_InternalClockConfig
+                0x2000525a                TIM_ITRxExternalClockConfig
+                0x20005288                TIM_TIxExternalClockConfig
+                0x200052e4                TIM_ETRClockMode1Config
+                0x20005342                TIM_ETRClockMode2Config
+                0x20005380                TIM_SelectInputTrigger
+                0x200053b8                TIM_SelectOutputTrigger
+                0x200053f0                TIM_SelectSlaveMode
+                0x20005428                TIM_SelectMasterSlaveMode
+                0x20005460                TIM_ETRConfig
+                0x200054b4                TIM_EncoderInterfaceConfig
+                0x2000554c                TIM_SelectHallSensor
+                0x2000558c                TIM_RemapConfig
+ .text          0x200057fc      0x294 ./Debug/sciTinyTimber.c.o
+                0x20005884                sci_init
+                0x2000592a                sci_write
+                0x20005980                sci_writechar
+                0x200059b6                sci_interrupt
+ .text          0x20005a90       0xf4 ./Debug/dispatch.s.o
+                0x20005a90                vect_SVCall
+                0x20005a94                vect_PendSV
+ .text          0x20005b84      0xcb0 ./Debug/driver_src_stm32f4xx_rcc.c.o
+                0x20005b84                RCC_DeInit
+                0x20005bf4                RCC_HSEConfig
+                0x20005c1c                RCC_WaitForHSEStartUp
+                0x20005c6c                RCC_AdjustHSICalibrationValue
+                0x20005ca8                RCC_HSICmd
+                0x20005cc8                RCC_LSEConfig
+                0x20005d0c                RCC_LSICmd
+                0x20005d2c                RCC_PLLConfig
+                0x20005d6c                RCC_PLLCmd
+                0x20005d8c                RCC_PLLI2SConfig
+                0x20005db8                RCC_PLLI2SCmd
+                0x20005dd8                RCC_PLLSAIConfig
+                0x20005e0c                RCC_PLLSAICmd
+                0x20005e2c                RCC_ClockSecuritySystemCmd
+                0x20005e4c                RCC_MCO1Config
+                0x20005e8c                RCC_MCO2Config
+                0x20005ecc                RCC_SYSCLKConfig
+                0x20005f04                RCC_GetSYSCLKSource
+                0x20005f24                RCC_HCLKConfig
+                0x20005f5c                RCC_PCLK1Config
+                0x20005f94                RCC_PCLK2Config
+                0x20005fd0                RCC_GetClocksFreq
+                0x2000612c                RCC_RTCCLKConfig
+                0x20006188                RCC_RTCCLKCmd
+                0x200061a8                RCC_BackupResetCmd
+                0x200061c8                RCC_I2SCLKConfig
+                0x200061e8                RCC_SAIPLLI2SClkDivConfig
+                0x20006228                RCC_SAIPLLSAIClkDivConfig
+                0x20006268                RCC_SAIBlockACLKConfig
+                0x200062a4                RCC_SAIBlockBCLKConfig
+                0x200062e0                RCC_LTDCCLKDivConfig
+                0x2000631c                RCC_TIMCLKPresConfig
+                0x2000633c                RCC_AHB1PeriphClockCmd
+                0x2000637c                RCC_AHB2PeriphClockCmd
+                0x200063bc                RCC_AHB3PeriphClockCmd
+                0x200063fc                RCC_APB1PeriphClockCmd
+                0x2000643c                RCC_APB2PeriphClockCmd
+                0x2000647c                RCC_AHB1PeriphResetCmd
+                0x200064bc                RCC_AHB2PeriphResetCmd
+                0x200064fc                RCC_AHB3PeriphResetCmd
+                0x2000653c                RCC_APB1PeriphResetCmd
+                0x2000657c                RCC_APB2PeriphResetCmd
+                0x200065bc                RCC_AHB1PeriphClockLPModeCmd
+                0x200065fc                RCC_AHB2PeriphClockLPModeCmd
+                0x2000663c                RCC_AHB3PeriphClockLPModeCmd
+                0x2000667c                RCC_APB1PeriphClockLPModeCmd
+                0x200066bc                RCC_APB2PeriphClockLPModeCmd
+                0x200066fc                RCC_ITConfig
+                0x20006748                RCC_GetFlagStatus
+                0x200067bc                RCC_ClearFlag
+                0x200067dc                RCC_GetITStatus
+                0x20006814                RCC_ClearITPendingBit
+ .text          0x20006834      0x434 ./Debug/canTinyTimber.c.o
+                0x200068bc                can_init
+                0x20006974                can_interrupt
+                0x20006afc                can_receive
+                0x20006bc6                can_send
+ .text          0x20006c68        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+ .text          0x20006c68        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+ .text          0x20006c68        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-ctype_.o)
+ .text          0x20006c68        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ *(.text.*)
+ .text.atoi     0x20006c68        0x8 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+                0x20006c68                atoi
+ .text._atoi_r  0x20006c70        0x8 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+                0x20006c70                _atoi_r
+ .text._strtol_l.isra.0
+                0x20006c78       0xf4 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+ .text._strtol_r
+                0x20006d6c        0x4 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+                0x20006d6c                _strtol_r
+ .text.strtol_l
+                0x20006d70       0x14 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+                0x20006d70                strtol_l
+ .text.strtol   0x20006d84       0x14 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+                0x20006d84                strtol
+ *(.rodata)
+ .rodata        0x20006d98       0x7d ./Debug/TinyTimber.c.o
+ *fill*         0x20006e15        0x3 
+ .rodata        0x20006e18       0x31 ./Debug/application.c.o
+ *fill*         0x20006e49        0x3 
+ .rodata        0x20006e4c       0x8a ./Debug/canTinyTimber.c.o
+ *(.rodata*)
+ .rodata._ctype_
+                0x20006ed6      0x101 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-ctype_.o)
+                0x20006ed6                _ctype_
+ *fill*         0x20006fd7        0x1 
+ .rodata._global_impure_ptr
+                0x20006fd8        0x4 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x20006fd8                _global_impure_ptr
+ *(.glue_7)
+ .glue_7        0x20006fdc        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x20006fdc        0x0 linker stubs
+                0x20006fdc                . = ALIGN (0x4)
+
+.vfp11_veneer   0x20006fdc        0x0
+ .vfp11_veneer  0x20006fdc        0x0 linker stubs
+
+.v4_bx          0x20006fdc        0x0
+ .v4_bx         0x20006fdc        0x0 linker stubs
+
+.iplt           0x20006fdc        0x0
+ .iplt          0x20006fdc        0x0 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+
+.rel.dyn        0x20006fdc        0x0
+ .rel.iplt      0x20006fdc        0x0 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+
+.data           0x20006fdc      0x690
+                0x20006fdc                . = ALIGN (0x4)
+ *(.data)
+ .data          0x20006fdc        0x0 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+ .data          0x20006fdc        0x0 ./Debug/driver_src_stm32f4xx_usart.c.o
+ .data          0x20006fdc        0x0 ./Debug/driver_src_stm32f4xx_gpio.c.o
+ .data          0x20006fdc        0x0 ./Debug/driver_src_stm32f4xx_dac.c.o
+ .data          0x20006fdc        0x0 ./Debug/driver_src_stm32f4xx_exti.c.o
+ .data          0x20006fdc       0x24 ./Debug/TinyTimber.c.o
+                0x20006fdc                hex
+                0x20006ff0                msgPool
+                0x20006ff4                threadPool
+                0x20006ff8                activeStack
+                0x20006ffc                current
+ .data          0x20007000        0x0 ./Debug/driver_src_stm32f4xx_can.c.o
+ .data          0x20007000        0x0 ./Debug/startup.c.o
+ .data          0x20007000      0x574 ./Debug/application.c.o
+                0x20007000                app
+                0x200070dc                sci0
+                0x200074fc                can0
+ .data          0x20007574        0x0 ./Debug/driver_src_stm32f4xx_tim.c.o
+ .data          0x20007574        0x0 ./Debug/sciTinyTimber.c.o
+ .data          0x20007574       0x84 ./Debug/dispatch.s.o
+ .data          0x200075f8       0x10 ./Debug/driver_src_stm32f4xx_rcc.c.o
+ .data          0x20007608        0x0 ./Debug/canTinyTimber.c.o
+ .data          0x20007608        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+ .data          0x20007608        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+ .data          0x20007608        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-ctype_.o)
+ .data          0x20007608        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ *(.data.*)
+ .data._impure_ptr
+                0x20007608        0x4 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x20007608                _impure_ptr
+ .data.impure_data
+                0x2000760c       0x60 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                0x2000766c                . = ALIGN (0x4)
+
+.igot.plt       0x2000766c        0x0
+ .igot.plt      0x2000766c        0x0 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+
+.bss            0x20007670     0x8370
+                0x20007670                . = ALIGN (0x4)
+                0x20007670                _sbss = .
+ *(.bss)
+ .bss           0x20007670        0x0 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+ .bss           0x20007670        0x0 ./Debug/driver_src_stm32f4xx_usart.c.o
+ .bss           0x20007670        0x0 ./Debug/driver_src_stm32f4xx_gpio.c.o
+ .bss           0x20007670        0x0 ./Debug/driver_src_stm32f4xx_dac.c.o
+ .bss           0x20007670        0x0 ./Debug/driver_src_stm32f4xx_exti.c.o
+ .bss           0x20007670       0x18 ./Debug/TinyTimber.c.o
+                0x20007670                doIRQSchedule
+                0x20007674                msgQ
+                0x20007678                timerQ
+                0x2000767c                runAsHardware
+                0x20007680                timestamp
+                0x20007684                overflows
+ .bss           0x20007688        0x0 ./Debug/driver_src_stm32f4xx_can.c.o
+ .bss           0x20007688        0x0 ./Debug/startup.c.o
+ .bss           0x20007688        0x0 ./Debug/application.c.o
+ .bss           0x20007688        0x0 ./Debug/driver_src_stm32f4xx_tim.c.o
+ .bss           0x20007688        0x0 ./Debug/sciTinyTimber.c.o
+ .bss           0x20007688        0x0 ./Debug/dispatch.s.o
+ .bss           0x20007688        0x0 ./Debug/driver_src_stm32f4xx_rcc.c.o
+ .bss           0x20007688        0x0 ./Debug/canTinyTimber.c.o
+ .bss           0x20007688        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+ .bss           0x20007688        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+ .bss           0x20007688        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-ctype_.o)
+ .bss           0x20007688        0x0 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+ *(.bss.*)
+ *(COMMON)
+ COMMON         0x20007688     0x8358 ./Debug/TinyTimber.c.o
+                0x20007688                otable
+                0x20007694                upcoming
+                0x20007698                threads
+                0x200076e8                mtable
+                0x200076f4                thread0
+                0x20007708                messages
+                0x200079d8                __heap_end
+                0x200079e0                stacks
+                0x2000f9e0                . = ALIGN (0x4)
+                0x2000f9e0                _ebss = .
+                0x2000f9e0                PROVIDE (end = _ebss)
+                [!provide]                PROVIDE (_end = _ebss)
+OUTPUT(./Debug/RTS-Lab.elf elf32-littlearm)
+
+.debug_info     0x00000000     0xa2c9
+ .debug_info    0x00000000      0x2c4 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+ .debug_info    0x000002c4      0xa68 ./Debug/driver_src_stm32f4xx_usart.c.o
+ .debug_info    0x00000d2c      0x67f ./Debug/driver_src_stm32f4xx_gpio.c.o
+ .debug_info    0x000013ab      0x6af ./Debug/driver_src_stm32f4xx_dac.c.o
+ .debug_info    0x00001a5a      0x383 ./Debug/driver_src_stm32f4xx_exti.c.o
+ .debug_info    0x00001ddd     0x1833 ./Debug/TinyTimber.c.o
+ .debug_info    0x00003610      0xc60 ./Debug/driver_src_stm32f4xx_can.c.o
+ .debug_info    0x00004270      0xade ./Debug/startup.c.o
+ .debug_info    0x00004d4e     0x10d0 ./Debug/application.c.o
+ .debug_info    0x00005e1e     0x1e26 ./Debug/driver_src_stm32f4xx_tim.c.o
+ .debug_info    0x00007c44      0x9d7 ./Debug/sciTinyTimber.c.o
+ .debug_info    0x0000861b      0xef4 ./Debug/driver_src_stm32f4xx_rcc.c.o
+ .debug_info    0x0000950f      0xdba ./Debug/canTinyTimber.c.o
+
+.debug_abbrev   0x00000000     0x1ddc
+ .debug_abbrev  0x00000000      0x164 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+ .debug_abbrev  0x00000164      0x1a8 ./Debug/driver_src_stm32f4xx_usart.c.o
+ .debug_abbrev  0x0000030c      0x1e6 ./Debug/driver_src_stm32f4xx_gpio.c.o
+ .debug_abbrev  0x000004f2      0x1b9 ./Debug/driver_src_stm32f4xx_dac.c.o
+ .debug_abbrev  0x000006ab      0x1ea ./Debug/driver_src_stm32f4xx_exti.c.o
+ .debug_abbrev  0x00000895      0x4e3 ./Debug/TinyTimber.c.o
+ .debug_abbrev  0x00000d78      0x238 ./Debug/driver_src_stm32f4xx_can.c.o
+ .debug_abbrev  0x00000fb0      0x286 ./Debug/startup.c.o
+ .debug_abbrev  0x00001236      0x2db ./Debug/application.c.o
+ .debug_abbrev  0x00001511      0x1c2 ./Debug/driver_src_stm32f4xx_tim.c.o
+ .debug_abbrev  0x000016d3      0x286 ./Debug/sciTinyTimber.c.o
+ .debug_abbrev  0x00001959      0x1f9 ./Debug/driver_src_stm32f4xx_rcc.c.o
+ .debug_abbrev  0x00001b52      0x28a ./Debug/canTinyTimber.c.o
+
+.debug_aranges  0x00000000      0x1a8
+ .debug_aranges
+                0x00000000       0x20 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+ .debug_aranges
+                0x00000020       0x20 ./Debug/driver_src_stm32f4xx_usart.c.o
+ .debug_aranges
+                0x00000040       0x20 ./Debug/driver_src_stm32f4xx_gpio.c.o
+ .debug_aranges
+                0x00000060       0x20 ./Debug/driver_src_stm32f4xx_dac.c.o
+ .debug_aranges
+                0x00000080       0x20 ./Debug/driver_src_stm32f4xx_exti.c.o
+ .debug_aranges
+                0x000000a0       0x20 ./Debug/TinyTimber.c.o
+ .debug_aranges
+                0x000000c0       0x20 ./Debug/driver_src_stm32f4xx_can.c.o
+ .debug_aranges
+                0x000000e0       0x28 ./Debug/startup.c.o
+ .debug_aranges
+                0x00000108       0x20 ./Debug/application.c.o
+ .debug_aranges
+                0x00000128       0x20 ./Debug/driver_src_stm32f4xx_tim.c.o
+ .debug_aranges
+                0x00000148       0x20 ./Debug/sciTinyTimber.c.o
+ .debug_aranges
+                0x00000168       0x20 ./Debug/driver_src_stm32f4xx_rcc.c.o
+ .debug_aranges
+                0x00000188       0x20 ./Debug/canTinyTimber.c.o
+
+.debug_line     0x00000000     0x46f9
+ .debug_line    0x00000000      0x218 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+ .debug_line    0x00000218      0x599 ./Debug/driver_src_stm32f4xx_usart.c.o
+ .debug_line    0x000007b1      0x437 ./Debug/driver_src_stm32f4xx_gpio.c.o
+ .debug_line    0x00000be8      0x3dc ./Debug/driver_src_stm32f4xx_dac.c.o
+ .debug_line    0x00000fc4      0x306 ./Debug/driver_src_stm32f4xx_exti.c.o
+ .debug_line    0x000012ca      0xaa0 ./Debug/TinyTimber.c.o
+ .debug_line    0x00001d6a      0x8de ./Debug/driver_src_stm32f4xx_can.c.o
+ .debug_line    0x00002648      0x392 ./Debug/startup.c.o
+ .debug_line    0x000029da      0x2e3 ./Debug/application.c.o
+ .debug_line    0x00002cbd      0xbac ./Debug/driver_src_stm32f4xx_tim.c.o
+ .debug_line    0x00003869      0x2c7 ./Debug/sciTinyTimber.c.o
+ .debug_line    0x00003b30      0x78f ./Debug/driver_src_stm32f4xx_rcc.c.o
+ .debug_line    0x000042bf      0x43a ./Debug/canTinyTimber.c.o
+
+.debug_str      0x00000000     0x3780
+ .debug_str     0x00000000      0x30e ./Debug/driver_src_stm32f4xx_syscfg.c.o
+                                0x376 (size before relaxing)
+ .debug_str     0x0000030e      0x4ec ./Debug/driver_src_stm32f4xx_usart.c.o
+                                0x6f7 (size before relaxing)
+ .debug_str     0x000007fa      0x32d ./Debug/driver_src_stm32f4xx_gpio.c.o
+                                0x50b (size before relaxing)
+ .debug_str     0x00000b27      0x2a6 ./Debug/driver_src_stm32f4xx_dac.c.o
+                                0x4bb (size before relaxing)
+ .debug_str     0x00000dcd      0x1d8 ./Debug/driver_src_stm32f4xx_exti.c.o
+                                0x3b4 (size before relaxing)
+ .debug_str     0x00000fa5      0x9ff ./Debug/TinyTimber.c.o
+                                0xcbb (size before relaxing)
+ .debug_str     0x000019a4      0x52f ./Debug/driver_src_stm32f4xx_can.c.o
+                                0x7a6 (size before relaxing)
+ .debug_str     0x00001ed3      0x13d ./Debug/startup.c.o
+                                0x7fe (size before relaxing)
+ .debug_str     0x00002010      0x4a3 ./Debug/application.c.o
+                                0x815 (size before relaxing)
+ .debug_str     0x000024b3      0xa91 ./Debug/driver_src_stm32f4xx_tim.c.o
+                                0xe38 (size before relaxing)
+ .debug_str     0x00002f44       0x7d ./Debug/sciTinyTimber.c.o
+                                0x8db (size before relaxing)
+ .debug_str     0x00002fc1      0x733 ./Debug/driver_src_stm32f4xx_rcc.c.o
+                                0x9fd (size before relaxing)
+ .debug_str     0x000036f4       0x8c ./Debug/canTinyTimber.c.o
+                                0xa7c (size before relaxing)
+
+.comment        0x00000000       0x79
+ .comment       0x00000000       0x79 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+                                 0x7a (size before relaxing)
+ .comment       0x00000079       0x7a ./Debug/driver_src_stm32f4xx_usart.c.o
+ .comment       0x00000079       0x7a ./Debug/driver_src_stm32f4xx_gpio.c.o
+ .comment       0x00000079       0x7a ./Debug/driver_src_stm32f4xx_dac.c.o
+ .comment       0x00000079       0x7a ./Debug/driver_src_stm32f4xx_exti.c.o
+ .comment       0x00000079       0x7a ./Debug/TinyTimber.c.o
+ .comment       0x00000079       0x7a ./Debug/driver_src_stm32f4xx_can.c.o
+ .comment       0x00000079       0x7a ./Debug/startup.c.o
+ .comment       0x00000079       0x7a ./Debug/application.c.o
+ .comment       0x00000079       0x7a ./Debug/driver_src_stm32f4xx_tim.c.o
+ .comment       0x00000079       0x7a ./Debug/sciTinyTimber.c.o
+ .comment       0x00000079       0x7a ./Debug/driver_src_stm32f4xx_rcc.c.o
+ .comment       0x00000079       0x7a ./Debug/canTinyTimber.c.o
+
+.ARM.attributes
+                0x00000000       0x32
+ .ARM.attributes
+                0x00000000       0x34 ./Debug/driver_src_stm32f4xx_syscfg.c.o
+ .ARM.attributes
+                0x00000034       0x34 ./Debug/driver_src_stm32f4xx_usart.c.o
+ .ARM.attributes
+                0x00000068       0x34 ./Debug/driver_src_stm32f4xx_gpio.c.o
+ .ARM.attributes
+                0x0000009c       0x34 ./Debug/driver_src_stm32f4xx_dac.c.o
+ .ARM.attributes
+                0x000000d0       0x34 ./Debug/driver_src_stm32f4xx_exti.c.o
+ .ARM.attributes
+                0x00000104       0x34 ./Debug/TinyTimber.c.o
+ .ARM.attributes
+                0x00000138       0x34 ./Debug/driver_src_stm32f4xx_can.c.o
+ .ARM.attributes
+                0x0000016c       0x34 ./Debug/startup.c.o
+ .ARM.attributes
+                0x000001a0       0x34 ./Debug/application.c.o
+ .ARM.attributes
+                0x000001d4       0x34 ./Debug/driver_src_stm32f4xx_tim.c.o
+ .ARM.attributes
+                0x00000208       0x34 ./Debug/sciTinyTimber.c.o
+ .ARM.attributes
+                0x0000023c       0x25 ./Debug/dispatch.s.o
+ .ARM.attributes
+                0x00000261       0x34 ./Debug/driver_src_stm32f4xx_rcc.c.o
+ .ARM.attributes
+                0x00000295       0x34 ./Debug/canTinyTimber.c.o
+ .ARM.attributes
+                0x000002c9       0x34 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+ .ARM.attributes
+                0x000002fd       0x34 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+ .ARM.attributes
+                0x00000331       0x32 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-ctype_.o)
+ .ARM.attributes
+                0x00000363       0x32 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+
+.debug_frame    0x00000000     0x3070
+ .debug_frame   0x00000000      0x11c ./Debug/driver_src_stm32f4xx_syscfg.c.o
+ .debug_frame   0x0000011c      0x490 ./Debug/driver_src_stm32f4xx_usart.c.o
+ .debug_frame   0x000005ac      0x23c ./Debug/driver_src_stm32f4xx_gpio.c.o
+ .debug_frame   0x000007e8      0x2ac ./Debug/driver_src_stm32f4xx_dac.c.o
+ .debug_frame   0x00000a94      0x148 ./Debug/driver_src_stm32f4xx_exti.c.o
+ .debug_frame   0x00000bdc      0x57c ./Debug/TinyTimber.c.o
+ .debug_frame   0x00001158      0x3f8 ./Debug/driver_src_stm32f4xx_can.c.o
+ .debug_frame   0x00001550      0x14c ./Debug/startup.c.o
+ .debug_frame   0x0000169c       0xbc ./Debug/application.c.o
+ .debug_frame   0x00001758      0xe54 ./Debug/driver_src_stm32f4xx_tim.c.o
+ .debug_frame   0x000025ac      0x11c ./Debug/sciTinyTimber.c.o
+ .debug_frame   0x000026c8      0x814 ./Debug/driver_src_stm32f4xx_rcc.c.o
+ .debug_frame   0x00002edc      0x100 ./Debug/canTinyTimber.c.o
+ .debug_frame   0x00002fdc       0x30 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+ .debug_frame   0x0000300c       0x64 c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+
+.debug_ranges   0x00000000       0x18
+ .debug_ranges  0x00000000       0x18 ./Debug/startup.c.o
+
+Cross Reference Table
+
+Symbol                                            File
+ABORT                                             ./Debug/TinyTimber.c.o
+CAN_CancelTransmit                                ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_ClearFlag                                     ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_ClearITPendingBit                             ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_DBGFreeze                                     ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_DeInit                                        ./Debug/driver_src_stm32f4xx_can.c.o
+                                                  ./Debug/startup.c.o
+CAN_FIFORelease                                   ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_FilterInit                                    ./Debug/driver_src_stm32f4xx_can.c.o
+                                                  ./Debug/startup.c.o
+CAN_GetFlagStatus                                 ./Debug/driver_src_stm32f4xx_can.c.o
+                                                  ./Debug/canTinyTimber.c.o
+CAN_GetITStatus                                   ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_GetLSBTransmitErrorCounter                    ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_GetLastErrorCode                              ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_GetReceiveErrorCounter                        ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_ITConfig                                      ./Debug/driver_src_stm32f4xx_can.c.o
+                                                  ./Debug/canTinyTimber.c.o
+CAN_Init                                          ./Debug/driver_src_stm32f4xx_can.c.o
+                                                  ./Debug/canTinyTimber.c.o
+CAN_MessagePending                                ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_OperatingModeRequest                          ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_Receive                                       ./Debug/driver_src_stm32f4xx_can.c.o
+                                                  ./Debug/canTinyTimber.c.o
+CAN_SlaveStartBank                                ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_Sleep                                         ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_StructInit                                    ./Debug/driver_src_stm32f4xx_can.c.o
+                                                  ./Debug/canTinyTimber.c.o
+CAN_TTComModeCmd                                  ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_Transmit                                      ./Debug/driver_src_stm32f4xx_can.c.o
+                                                  ./Debug/canTinyTimber.c.o
+CAN_TransmitStatus                                ./Debug/driver_src_stm32f4xx_can.c.o
+CAN_WakeUp                                        ./Debug/driver_src_stm32f4xx_can.c.o
+CURRENT_OFFSET                                    ./Debug/TinyTimber.c.o
+DAC_ClearFlag                                     ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_ClearITPendingBit                             ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_Cmd                                           ./Debug/driver_src_stm32f4xx_dac.c.o
+                                                  ./Debug/startup.c.o
+DAC_DMACmd                                        ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_DeInit                                        ./Debug/driver_src_stm32f4xx_dac.c.o
+                                                  ./Debug/startup.c.o
+DAC_DualSoftwareTriggerCmd                        ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_GetDataOutputValue                            ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_GetFlagStatus                                 ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_GetITStatus                                   ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_ITConfig                                      ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_Init                                          ./Debug/driver_src_stm32f4xx_dac.c.o
+                                                  ./Debug/startup.c.o
+DAC_SetChannel1Data                               ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_SetChannel2Data                               ./Debug/driver_src_stm32f4xx_dac.c.o
+                                                  ./Debug/startup.c.o
+DAC_SetDualChannelData                            ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_SoftwareTriggerCmd                            ./Debug/driver_src_stm32f4xx_dac.c.o
+DAC_StructInit                                    ./Debug/driver_src_stm32f4xx_dac.c.o
+                                                  ./Debug/startup.c.o
+DAC_WaveGenerationCmd                             ./Debug/driver_src_stm32f4xx_dac.c.o
+DUMP                                              ./Debug/TinyTimber.c.o
+                                                  ./Debug/canTinyTimber.c.o
+                                                  ./Debug/dispatch.s.o
+DUMPC                                             ./Debug/TinyTimber.c.o
+DUMPD                                             ./Debug/TinyTimber.c.o
+                                                  ./Debug/dispatch.s.o
+DUMPH                                             ./Debug/TinyTimber.c.o
+                                                  ./Debug/dispatch.s.o
+EXTI_ClearFlag                                    ./Debug/driver_src_stm32f4xx_exti.c.o
+EXTI_ClearITPendingBit                            ./Debug/driver_src_stm32f4xx_exti.c.o
+EXTI_DeInit                                       ./Debug/driver_src_stm32f4xx_exti.c.o
+                                                  ./Debug/startup.c.o
+EXTI_GenerateSWInterrupt                          ./Debug/driver_src_stm32f4xx_exti.c.o
+EXTI_GetFlagStatus                                ./Debug/driver_src_stm32f4xx_exti.c.o
+EXTI_GetITStatus                                  ./Debug/driver_src_stm32f4xx_exti.c.o
+EXTI_Init                                         ./Debug/driver_src_stm32f4xx_exti.c.o
+                                                  ./Debug/startup.c.o
+EXTI_StructInit                                   ./Debug/driver_src_stm32f4xx_exti.c.o
+                                                  ./Debug/startup.c.o
+GPIO_DeInit                                       ./Debug/driver_src_stm32f4xx_gpio.c.o
+                                                  ./Debug/startup.c.o
+GPIO_Init                                         ./Debug/driver_src_stm32f4xx_gpio.c.o
+                                                  ./Debug/startup.c.o
+GPIO_PinAFConfig                                  ./Debug/driver_src_stm32f4xx_gpio.c.o
+                                                  ./Debug/startup.c.o
+GPIO_PinLockConfig                                ./Debug/driver_src_stm32f4xx_gpio.c.o
+GPIO_ReadInputData                                ./Debug/driver_src_stm32f4xx_gpio.c.o
+GPIO_ReadInputDataBit                             ./Debug/driver_src_stm32f4xx_gpio.c.o
+GPIO_ReadOutputData                               ./Debug/driver_src_stm32f4xx_gpio.c.o
+GPIO_ReadOutputDataBit                            ./Debug/driver_src_stm32f4xx_gpio.c.o
+GPIO_ResetBits                                    ./Debug/driver_src_stm32f4xx_gpio.c.o
+GPIO_SetBits                                      ./Debug/driver_src_stm32f4xx_gpio.c.o
+GPIO_StructInit                                   ./Debug/driver_src_stm32f4xx_gpio.c.o
+                                                  ./Debug/startup.c.o
+GPIO_ToggleBits                                   ./Debug/driver_src_stm32f4xx_gpio.c.o
+GPIO_Write                                        ./Debug/driver_src_stm32f4xx_gpio.c.o
+GPIO_WriteBit                                     ./Debug/driver_src_stm32f4xx_gpio.c.o
+                                                  ./Debug/startup.c.o
+                                                  ./Debug/TinyTimber.c.o
+RCC_AHB1PeriphClockCmd                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+                                                  ./Debug/startup.c.o
+RCC_AHB1PeriphClockLPModeCmd                      ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_AHB1PeriphResetCmd                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+                                                  ./Debug/driver_src_stm32f4xx_gpio.c.o
+RCC_AHB2PeriphClockCmd                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_AHB2PeriphClockLPModeCmd                      ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_AHB2PeriphResetCmd                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_AHB3PeriphClockCmd                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_AHB3PeriphClockLPModeCmd                      ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_AHB3PeriphResetCmd                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_APB1PeriphClockCmd                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+                                                  ./Debug/startup.c.o
+RCC_APB1PeriphClockLPModeCmd                      ./Debug/driver_src_stm32f4xx_rcc.c.o
+                                                  ./Debug/startup.c.o
+RCC_APB1PeriphResetCmd                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+                                                  ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/driver_src_stm32f4xx_can.c.o
+                                                  ./Debug/driver_src_stm32f4xx_dac.c.o
+                                                  ./Debug/driver_src_stm32f4xx_usart.c.o
+RCC_APB2PeriphClockCmd                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+                                                  ./Debug/startup.c.o
+RCC_APB2PeriphClockLPModeCmd                      ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_APB2PeriphResetCmd                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+                                                  ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/driver_src_stm32f4xx_usart.c.o
+                                                  ./Debug/driver_src_stm32f4xx_syscfg.c.o
+RCC_AdjustHSICalibrationValue                     ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_BackupResetCmd                                ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_ClearFlag                                     ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_ClearITPendingBit                             ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_ClockSecuritySystemCmd                        ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_DeInit                                        ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_GetClocksFreq                                 ./Debug/driver_src_stm32f4xx_rcc.c.o
+                                                  ./Debug/driver_src_stm32f4xx_usart.c.o
+RCC_GetFlagStatus                                 ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_GetITStatus                                   ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_GetSYSCLKSource                               ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_HCLKConfig                                    ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_HSEConfig                                     ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_HSICmd                                        ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_I2SCLKConfig                                  ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_ITConfig                                      ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_LSEConfig                                     ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_LSICmd                                        ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_LTDCCLKDivConfig                              ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_MCO1Config                                    ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_MCO2Config                                    ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_PCLK1Config                                   ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_PCLK2Config                                   ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_PLLCmd                                        ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_PLLConfig                                     ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_PLLI2SCmd                                     ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_PLLI2SConfig                                  ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_PLLSAICmd                                     ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_PLLSAIConfig                                  ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_RTCCLKCmd                                     ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_RTCCLKConfig                                  ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_SAIBlockACLKConfig                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_SAIBlockBCLKConfig                            ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_SAIPLLI2SClkDivConfig                         ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_SAIPLLSAIClkDivConfig                         ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_SYSCLKConfig                                  ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_TIMCLKPresConfig                              ./Debug/driver_src_stm32f4xx_rcc.c.o
+RCC_WaitForHSEStartUp                             ./Debug/driver_src_stm32f4xx_rcc.c.o
+SETPC                                             ./Debug/TinyTimber.c.o
+SETSTACK                                          ./Debug/TinyTimber.c.o
+SYSCFG_CompensationCellCmd                        ./Debug/driver_src_stm32f4xx_syscfg.c.o
+SYSCFG_DeInit                                     ./Debug/driver_src_stm32f4xx_syscfg.c.o
+SYSCFG_ETH_MediaInterfaceConfig                   ./Debug/driver_src_stm32f4xx_syscfg.c.o
+SYSCFG_EXTILineConfig                             ./Debug/driver_src_stm32f4xx_syscfg.c.o
+                                                  ./Debug/startup.c.o
+SYSCFG_GetCompensationCellStatus                  ./Debug/driver_src_stm32f4xx_syscfg.c.o
+SYSCFG_MemoryRemapConfig                          ./Debug/driver_src_stm32f4xx_syscfg.c.o
+SYSCFG_MemorySwappingBank                         ./Debug/driver_src_stm32f4xx_syscfg.c.o
+TIMER_INIT                                        ./Debug/TinyTimber.c.o
+TIM_ARRPreloadConfig                              ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_BDTRConfig                                    ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_BDTRStructInit                                ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_CCPreloadControl                              ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_CCxCmd                                        ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_CCxNCmd                                       ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ClearFlag                                     ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ClearITPendingBit                             ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/TinyTimber.c.o
+TIM_ClearOC1Ref                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ClearOC2Ref                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ClearOC3Ref                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ClearOC4Ref                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_Cmd                                           ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/TinyTimber.c.o
+TIM_CounterModeConfig                             ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_CtrlPWMOutputs                                ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_DMACmd                                        ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_DMAConfig                                     ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_DeInit                                        ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/TinyTimber.c.o
+TIM_ETRClockMode1Config                           ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ETRClockMode2Config                           ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ETRConfig                                     ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_EncoderInterfaceConfig                        ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ForcedOC1Config                               ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ForcedOC2Config                               ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ForcedOC3Config                               ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ForcedOC4Config                               ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_GenerateEvent                                 ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_GetCapture1                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_GetCapture2                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_GetCapture3                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_GetCapture4                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_GetCounter                                    ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/TinyTimber.c.o
+TIM_GetFlagStatus                                 ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_GetITStatus                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_GetPrescaler                                  ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ICInit                                        ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ICStructInit                                  ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_ITConfig                                      ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/TinyTimber.c.o
+TIM_ITRxExternalClockConfig                       ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_InternalClockConfig                           ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC1FastConfig                                 ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC1Init                                       ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC1NPolarityConfig                            ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC1PolarityConfig                             ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC1PreloadConfig                              ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC2FastConfig                                 ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC2Init                                       ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC2NPolarityConfig                            ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC2PolarityConfig                             ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC2PreloadConfig                              ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC3FastConfig                                 ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC3Init                                       ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC3NPolarityConfig                            ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC3PolarityConfig                             ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC3PreloadConfig                              ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC4FastConfig                                 ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC4Init                                       ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC4PolarityConfig                             ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OC4PreloadConfig                              ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_OCStructInit                                  ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_PWMIConfig                                    ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_PrescalerConfig                               ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_RemapConfig                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SelectCCDMA                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SelectCOM                                     ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SelectHallSensor                              ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SelectInputTrigger                            ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SelectMasterSlaveMode                         ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SelectOCxM                                    ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SelectOnePulseMode                            ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SelectOutputTrigger                           ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SelectSlaveMode                               ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SetAutoreload                                 ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SetClockDivision                              ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SetCompare1                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/TinyTimber.c.o
+TIM_SetCompare2                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SetCompare3                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SetCompare4                                   ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SetCounter                                    ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/TinyTimber.c.o
+TIM_SetIC1Prescaler                               ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SetIC2Prescaler                               ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SetIC3Prescaler                               ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_SetIC4Prescaler                               ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_TIxExternalClockConfig                        ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_TimeBaseInit                                  ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/TinyTimber.c.o
+TIM_TimeBaseStructInit                            ./Debug/driver_src_stm32f4xx_tim.c.o
+                                                  ./Debug/TinyTimber.c.o
+TIM_UpdateDisableConfig                           ./Debug/driver_src_stm32f4xx_tim.c.o
+TIM_UpdateRequestConfig                           ./Debug/driver_src_stm32f4xx_tim.c.o
+T_RESET                                           ./Debug/TinyTimber.c.o
+T_SAMPLE                                          ./Debug/TinyTimber.c.o
+USART_ClearFlag                                   ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_ClearITPendingBit                           ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_ClockInit                                   ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_ClockStructInit                             ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_Cmd                                         ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_DMACmd                                      ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_DeInit                                      ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_GetFlagStatus                               ./Debug/driver_src_stm32f4xx_usart.c.o
+                                                  ./Debug/sciTinyTimber.c.o
+                                                  ./Debug/TinyTimber.c.o
+USART_GetITStatus                                 ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_HalfDuplexCmd                               ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_ITConfig                                    ./Debug/driver_src_stm32f4xx_usart.c.o
+                                                  ./Debug/sciTinyTimber.c.o
+USART_Init                                        ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_IrDACmd                                     ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_IrDAConfig                                  ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_LINBreakDetectLengthConfig                  ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_LINCmd                                      ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_OneBitMethodCmd                             ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_OverSampling8Cmd                            ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_ReceiveData                                 ./Debug/driver_src_stm32f4xx_usart.c.o
+                                                  ./Debug/sciTinyTimber.c.o
+USART_ReceiverWakeUpCmd                           ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_SendBreak                                   ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_SendData                                    ./Debug/driver_src_stm32f4xx_usart.c.o
+                                                  ./Debug/sciTinyTimber.c.o
+                                                  ./Debug/TinyTimber.c.o
+USART_SetAddress                                  ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_SetGuardTime                                ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_SetPrescaler                                ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_SmartCardCmd                                ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_SmartCardNACKCmd                            ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_StructInit                                  ./Debug/driver_src_stm32f4xx_usart.c.o
+USART_WakeUpConfig                                ./Debug/driver_src_stm32f4xx_usart.c.o
+__heap_end                                        ./Debug/TinyTimber.c.o
+__pendSV_dispatch                                 ./Debug/TinyTimber.c.o
+__sf_fake_stderr                                  c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+__sf_fake_stdin                                   c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+__sf_fake_stdout                                  c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+__svc_dispatch                                    ./Debug/TinyTimber.c.o
+_atoi_r                                           c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+_ctype_                                           c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-ctype_.o)
+                                                  c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+_ebss                                             ./Debug/startup.c.o
+_global_impure_ptr                                c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+_impure_ptr                                       c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-impure.o)
+                                                  c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+_sbrk                                             ./Debug/TinyTimber.c.o
+_sbss                                             ./Debug/startup.c.o
+_strtol_r                                         c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+                                                  c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+activeStack                                       ./Debug/TinyTimber.c.o
+app                                               ./Debug/application.c.o
+async                                             ./Debug/TinyTimber.c.o
+                                                  ./Debug/canTinyTimber.c.o
+                                                  ./Debug/sciTinyTimber.c.o
+atoi                                              c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+                                                  ./Debug/application.c.o
+can0                                              ./Debug/application.c.o
+can_init                                          ./Debug/canTinyTimber.c.o
+                                                  ./Debug/application.c.o
+can_interrupt                                     ./Debug/canTinyTimber.c.o
+                                                  ./Debug/application.c.o
+can_receive                                       ./Debug/canTinyTimber.c.o
+                                                  ./Debug/application.c.o
+can_send                                          ./Debug/canTinyTimber.c.o
+                                                  ./Debug/application.c.o
+cli                                               ./Debug/TinyTimber.c.o
+current                                           ./Debug/TinyTimber.c.o
+                                                  ./Debug/dispatch.s.o
+dequeue                                           ./Debug/TinyTimber.c.o
+dequeue_pool                                      ./Debug/TinyTimber.c.o
+doIRQSchedule                                     ./Debug/TinyTimber.c.o
+                                                  ./Debug/canTinyTimber.c.o
+                                                  ./Debug/sciTinyTimber.c.o
+                                                  ./Debug/application.c.o
+end                                               ./Debug/TinyTimber.c.o
+enqueueByBaseline                                 ./Debug/TinyTimber.c.o
+enqueueByDeadline                                 ./Debug/TinyTimber.c.o
+handleInput                                       ./Debug/application.c.o
+hex                                               ./Debug/TinyTimber.c.o
+insert                                            ./Debug/TinyTimber.c.o
+install                                           ./Debug/TinyTimber.c.o
+                                                  ./Debug/application.c.o
+main                                              ./Debug/application.c.o
+                                                  ./Debug/startup.c.o
+messages                                          ./Debug/TinyTimber.c.o
+msgPool                                           ./Debug/TinyTimber.c.o
+msgQ                                              ./Debug/TinyTimber.c.o
+mtable                                            ./Debug/TinyTimber.c.o
+otable                                            ./Debug/TinyTimber.c.o
+overflows                                         ./Debug/TinyTimber.c.o
+pop                                               ./Debug/TinyTimber.c.o
+push                                              ./Debug/TinyTimber.c.o
+reader                                            ./Debug/application.c.o
+receiver                                          ./Debug/application.c.o
+runAsHardware                                     ./Debug/TinyTimber.c.o
+sci0                                              ./Debug/application.c.o
+sci_init                                          ./Debug/sciTinyTimber.c.o
+                                                  ./Debug/application.c.o
+sci_interrupt                                     ./Debug/sciTinyTimber.c.o
+                                                  ./Debug/application.c.o
+sci_write                                         ./Debug/sciTinyTimber.c.o
+                                                  ./Debug/application.c.o
+sci_writechar                                     ./Debug/sciTinyTimber.c.o
+                                                  ./Debug/application.c.o
+sei                                               ./Debug/TinyTimber.c.o
+stacks                                            ./Debug/TinyTimber.c.o
+startApp                                          ./Debug/application.c.o
+startup                                           ./Debug/startup.c.o
+strtol                                            c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+                                                  c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-atoi.o)
+strtol_l                                          c:/cseapp/codelite/tools/gcc-arm/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-strtol.o)
+sync                                              ./Debug/TinyTimber.c.o
+                                                  ./Debug/application.c.o
+thread0                                           ./Debug/TinyTimber.c.o
+threadPool                                        ./Debug/TinyTimber.c.o
+threads                                           ./Debug/TinyTimber.c.o
+timerQ                                            ./Debug/TinyTimber.c.o
+timestamp                                         ./Debug/TinyTimber.c.o
+tinytimber                                        ./Debug/TinyTimber.c.o
+                                                  ./Debug/application.c.o
+upcoming                                          ./Debug/TinyTimber.c.o
+                                                  ./Debug/dispatch.s.o
+vect_CAN1                                         ./Debug/TinyTimber.c.o
+vect_EXTI9_5                                      ./Debug/TinyTimber.c.o
+vect_PendSV                                       ./Debug/dispatch.s.o
+                                                  ./Debug/TinyTimber.c.o
+vect_SVCall                                       ./Debug/dispatch.s.o
+                                                  ./Debug/TinyTimber.c.o
+vect_TIM5                                         ./Debug/TinyTimber.c.o
+vect_USART1                                       ./Debug/TinyTimber.c.o

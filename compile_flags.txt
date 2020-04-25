@@ -1,0 +1,5 @@
+-IC:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber
+-IC:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber\$(ProjectPath)
+-IC:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber\$(ProjectPath)\device\inc
+-IC:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber\$(ProjectPath)\driver\inc
+-DSTM32F40_41xxx
