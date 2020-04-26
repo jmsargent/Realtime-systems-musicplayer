@@ -11,29 +11,30 @@
 
 typedef struct {
 	
-	Object super ;
-	int active ;
-	int period ;
-	int volume ;
-	int currentDACState ;	// contains information about last sent info to 
-	int delay ;	 //	delay between each note , should shorten the note 
-	int beatLength ;	// duration a note is played 
-	int pointer ;
+	Object super;
+	int active;
+	int period;
+	int volume;
+	int currentDACState;	// contains information about last sent info to 
+	int delay;	 //	delay between each note , should shorten the note 
+	int beatLength;	// duration a note is played 
+	int pointer;
 	
-}Walkman ;
+} Walkman;
 
-Walkman player = { initObject(), 0, 'X' };
+Walkman player = { initObject(), 0, 0, 0, 0, 0, 0};
 
 
-void startStopPlayer(Walkman *self ,int active) ;
-void setBeatLength(Walkman *self ,int beatLength) ;
-int getBeatLength(Walkman *self,int unused) ;
-void setDelay(Walkman *self,int delay) ;
-int getDelay(Walkman *self,int unused) ;
-void setPeriod(Walkman *self,int period) ;
-int getPeriod(Walkman *self,int unused) ;	 
-void changeVolume(Walkman *self,int volume) ; // 
-void playNext(Walkman *self,int unused) ;  // after
+void startStopPlayer(Walkman *self ,int active);
+int getPlayerActiveStatus(Walkman *self, int unused);
+void setBeatLength(Walkman *self ,int beatLength);
+int getBeatLength(Walkman *self,int unused);
+void setDelay(Walkman *self,int delay);
+int getDelay(Walkman *self,int unused);
+void setPeriod(Walkman *self,int period);
+int getPeriod(Walkman *self,int unused);	 
+void changeVolume(Walkman *self,int volume); // 
+void playNext(Walkman *self,int unused);  // after
 
 
 
@@ -55,7 +56,7 @@ void playNext(Walkman *self,int unused) ;  // after
 
 typedef struct {
     Object super;
-    int temp;
+    int changeToValue;
     char c;
 	int buffer[MAX_INTEGER_SIZE]; // funderar på att lagra bakifrån med andra tecken? eller ba delvis ta bort grejjer ur array o ställa tillbaka pekare ett steg
 	int digitPointer;
@@ -68,7 +69,7 @@ void receiver(App*, int);
 void handleInput(App *self, int key); 	// som din gamla create integer använd if /elseif ist för case med ASCII villkor för att korta ned
 void storeDigit(App *self, int digit);
 void printPeriods(App *self, int key);
-void printPlayerChanges(App *self, int key); 		// prints changes in vol,period.. etc
+void printPlayerChanges(App *self, int key);  // prints changes in vol,period.. etc
 
 
 
@@ -116,63 +117,100 @@ int main() {
 }
 
 
-// Methods for app
-
+// app functions
 
 void handleInput(App *self, int key){
 	
+	// handles numbers
 	if (key == '-' && self->digitPointer ){	
 		
 		ASYNC(self, storeDigit, key);
-	
-	}else if ( atoi( (char *) key) <= 9 && atoi( (char *) key) >= 0 ){		// Do really need to cast here?
 		
+	}else if ( atoi( (char *) key) <= 9 && atoi( (char *) key) >= 0 ){		// Do I really need to typecast here?
+
 		ASYNC(self, storeDigit, key);
 		
+		// updates integerversion of number
+		// change later
+		snprintf(self->buffer, MAX_INTEGER_SIZE, "&d", self->changeToValue);
 	}
+	
 	
 	
 	// player bindings
+	// takes stored number and sends to different walkman functions,
+	// takes the same number and prints change in consol
+	
 	switch (key){
 		
-		case 'v':
-		ASYNC(&player, changeVolume, 0);
+		case('v'):
+		ASYNC(&player, changeVolume, self->buffer[self->digitPointer]);
 		ASYNC(&player, printPlayerChanges, key);
 		break;
-		case 'V':
-		ASYNC(&player, changeVolume, 1);
-		ASYNC(&player, printPlayerChanges, key);
-		case 'a':
-		ASYNC(&player, startStopPlayer, key);
+		
+		case('a'):
+		// To start or stop player there is no need to send any special value,
+		// if player is started, same binding will stop player
+		ASYNC(&player, startStopPlayer, self->buffer[self->digitPointer]);
 		ASYNC(&player, printPlayerChanges, key);
 		break;
-		case 'b':
+		
+		case('b'):
 		ASYNC(&player, setBeatLength, key);
 		ASYNC(&player, printPlayerChanges, key);
-		case 'p':
-		ASYNC(&player, setPeriod, 0);
-		ASYNC(&player, printPlayerChanges, key);
-		case 'P':
-		ASYNC(&player, setPeriod, 1);
-		ASYNC(&player, printPlayerChanges, key);
 		break;
-		case 'd':
-		ASYNC(&player, setDelay, 0);
+		
+		case('p'):
+		ASYNC(&player, setPeriod, key);
 		ASYNC(&player, printPlayerChanges, key);
-		break;
-		case 'D':
-		ASYNC(&player, setDelay, 1);
+		break; 
+		
+		case('d'):
+		ASYNC(&player, setDelay, key);
 		ASYNC(&player, printPlayerChanges, key);
 		break;
 		
 	}
-	
-
-	
 }
+
+// Prints the value and what function the value was sent to, to the consol 
 void printPlayerChanges(App *self, int key){
 	
+	switch (key){
+		
+		case 'v':
+
+		break;
+		
+		case 'a':
+
+		break;
+		
+		case 'b':
+
+		break;
+		
+		case 'p':
+
+		break; 
+		
+		case 'd':
+
+		break;
+	
+	}
 }
+
+// player functions
+
+void startStopPlayer(Walkman *self, int unused){
+	if(self -> active){
+		self ->active = 0;
+	}else{
+		self -> active = 1;
+	}
+}
+
 void storeDigit(App *self, int digit){
 	
 	self->buffer[self->digitPointer] = digit ;
@@ -180,4 +218,24 @@ void storeDigit(App *self, int digit){
 	
 }
 
+void setDelay(Walkman *self, int delay){
+	self -> delay = delay;
+}
+
+int getPlayerActiveStatus(Walkman *self, int unused){
+	return(self->active); 
+}
+
+void changeVolume(Walkman *self,int volume){
+	if(volume > 0 && volume < 20)
+		self -> volume = volume;
+}
+
+void setBeatLength(Walkman *self, int bl){
+	self -> beatLength = bl;
+}
+
+void setPeriod(Walkman *self, int period){
+	self -> period = period;
+}
 
