@@ -132,7 +132,7 @@ void handleInput(App *self, int key){
 		
 		// updates integerversion of number
 		// change later
-		snprintf(self->buffer, MAX_INTEGER_SIZE, "&d", self->changeToValue);
+//		snprintf(self->buffer, MAX_INTEGER_SIZE, "&d", self->changeToValue);
 	}
 	
 	
@@ -179,23 +179,33 @@ void printPlayerChanges(App *self, int key){
 	switch (key){
 		
 		case 'v':
-
+		    SCI_WRITE(&sci0, "Volume: \'");
+			SCI_WRITE(&sci0, self->buffer);
+			SCI_WRITE(&sci0, "\'\n");
 		break;
 		
 		case 'a':
-
+			SCI_WRITE(&sci0, "active status: \'");
+			SCI_WRITE(&sci0, self->buffer);
+			SCI_WRITE(&sci0, "\'\n");
 		break;
 		
 		case 'b':
-
+			SCI_WRITE(&sci0, "BeatLength: \'");
+			SCI_WRITE(&sci0, self->buffer);
+			SCI_WRITE(&sci0, "\'\n");
 		break;
 		
 		case 'p':
-
+			SCI_WRITE(&sci0, "New period length:  \'");
+			SCI_WRITE(&sci0, self->buffer);
+			SCI_WRITE(&sci0, "\'\n");
 		break; 
 		
 		case 'd':
-
+			SCI_WRITE(&sci0, "Delay: \'");
+			SCI_WRITE(&sci0, self->buffer);
+			SCI_WRITE(&sci0, "\'\n");
 		break;
 	
 	}
