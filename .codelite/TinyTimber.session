@@ -5,25 +5,20 @@
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="C:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber\application.c" Name="FileName"/>
-      <int Value="38" Name="FirstVisibleLine"/>
-      <int Value="70" Name="CurrentLine"/>
+      <int Value="131" Name="FirstVisibleLine"/>
+      <int Value="188" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds">
-        <IntVectorItem Value="11"/>
-        <IntVectorItem Value="56"/>
-        <IntVectorItem Value="79"/>
         <IntVectorItem Value="86"/>
-        <IntVectorItem Value="92"/>
-        <IntVectorItem Value="111"/>
+        <IntVectorItem Value="93"/>
+        <IntVectorItem Value="101"/>
         <IntVectorItem Value="120"/>
-        <IntVectorItem Value="170"/>
-        <IntVectorItem Value="204"/>
-        <IntVectorItem Value="212"/>
-        <IntVectorItem Value="219"/>
-        <IntVectorItem Value="223"/>
-        <IntVectorItem Value="227"/>
-        <IntVectorItem Value="232"/>
-        <IntVectorItem Value="236"/>
+        <IntVectorItem Value="260"/>
+        <IntVectorItem Value="272"/>
+        <IntVectorItem Value="276"/>
+        <IntVectorItem Value="280"/>
+        <IntVectorItem Value="285"/>
+        <IntVectorItem Value="289"/>
       </IntVector>
     </TabInfo>
   </TabInfoArray>
