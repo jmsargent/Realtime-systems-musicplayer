@@ -1,121 +1,121 @@
 [{
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cm4_simd.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cm4_simd.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cm4_simd.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cmInstr.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cmInstr.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cmInstr.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\system_stm32f4xx.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\system_stm32f4xx.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\system_stm32f4xx.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cm4_simd.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cm4_simd.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cm4_simd.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cmFunc.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cmFunc.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cmFunc.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cmFunc.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cmFunc.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cmFunc.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_syscfg.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_syscfg.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_syscfg.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_syscfg.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_syscfg.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_syscfg.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_usart.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_usart.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_usart.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_usart.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_usart.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_usart.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_gpio.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_gpio.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_gpio.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_tim.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_tim.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_tim.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_dac.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_dac.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_dac.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_dac.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_dac.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_dac.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_syscfg.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_syscfg.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_syscfg.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_syscfg.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_syscfg.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_syscfg.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_exti.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_exti.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_exti.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\TinyTimber.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\TinyTimber.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\TinyTimber.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\TinyTimber.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\TinyTimber.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\TinyTimber.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_gpio.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_gpio.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_gpio.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_rcc.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_rcc.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_rcc.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\startup.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\startup.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\startup.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\TinyTimber.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\TinyTimber.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\TinyTimber.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_dac.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_dac.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_dac.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_dac.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_dac.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_dac.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\TinyTimber.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\TinyTimber.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\TinyTimber.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_can.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_can.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_can.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\application.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\application.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\application.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\sciTinyTimber.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\sciTinyTimber.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\sciTinyTimber.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_can.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_can.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_can.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\startup.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\startup.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\startup.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\sciTinyTimber.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\sciTinyTimber.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\sciTinyTimber.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\application.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\application.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\application.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\sciTinyTimber.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\sciTinyTimber.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\sciTinyTimber.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\canTinyTimber.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\canTinyTimber.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\canTinyTimber.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_can.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_can.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_can.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_tim.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_tim.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_tim.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\stm32f4xx.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\stm32f4xx.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\stm32f4xx.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\sciTinyTimber.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\sciTinyTimber.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\sciTinyTimber.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_exti.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_exti.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_exti.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\stm32f4xx.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\stm32f4xx.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\stm32f4xx.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\system_stm32f4xx.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\system_stm32f4xx.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\system_stm32f4xx.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_exti.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_exti.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_exti.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_tim.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_tim.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_tim.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_usart.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_usart.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_usart.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\canTinyTimber.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\canTinyTimber.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\canTinyTimber.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cm4.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cm4.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cm4.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\canTinyTimber.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\canTinyTimber.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\canTinyTimber.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_rcc.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_rcc.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\src\\stm32f4xx_rcc.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_exti.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_exti.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_exti.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_can.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_can.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_can.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_rcc.c",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_rcc.c -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\src\\stm32f4xx_rcc.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cmInstr.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cmInstr.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\device\\inc\\core_cmInstr.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_gpio.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_gpio.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_gpio.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_gpio.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_gpio.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_gpio.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_rcc.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_rcc.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_rcc.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\canTinyTimber.c",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\canTinyTimber.c -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\canTinyTimber.c.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall  -mthumb  -mcpu=cortex-m4  -mfloat-abi=hard  -mfpu=fpv4-sp-d16  -fverbose-asm"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cm4.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cm4.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\device\\inc\\core_cm4.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }, {
-  "file": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_tim.h",
-  "directory": "C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber",
-  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_tim.h -o C:\\Users\\Jmsar\\Documents\\Skola\\Realtidssystem\\TinyTimber\\driver\\inc\\stm32f4xx_tim.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
+  "file": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_usart.h",
+  "directory": "C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber",
+  "command": "clang  -c C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_usart.h -o C:\\Users\\Jmsar\\Documents\\programming\\TinyTimber\\driver\\inc\\stm32f4xx_usart.h.o  -DSTM32F40_41xxx -I. -I$(ProjectPath) -I$(ProjectPath)/device/inc -I$(ProjectPath)/driver/inc  -g  -O0  -Wall"
  }]

@@ -1,5 +1,5 @@
--IC:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber
--IC:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber\$(ProjectPath)
--IC:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber\$(ProjectPath)\device\inc
--IC:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber\$(ProjectPath)\driver\inc
+-IC:\Users\Jmsar\Documents\programming\TinyTimber
+-IC:\Users\Jmsar\Documents\programming\TinyTimber\$(ProjectPath)
+-IC:\Users\Jmsar\Documents\programming\TinyTimber\$(ProjectPath)\device\inc
+-IC:\Users\Jmsar\Documents\programming\TinyTimber\$(ProjectPath)\driver\inc
 -DSTM32F40_41xxx

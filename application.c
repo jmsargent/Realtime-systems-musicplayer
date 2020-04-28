@@ -6,12 +6,6 @@
 
 // ToneGenerator controlls the dac
 
-/*
- * 
- * TODO: TA BORT PRINTPLAYERCHANGES, DEN INNEBÄR KRÅNGEL
- * 
- * */
-
 #define MAX_INTEGER_SIZE 50	// Buffer size
 #define MADAC ((volatile unsigned char *) 0x4000741C) // base adress for DAC
 
@@ -19,29 +13,23 @@ typedef struct {
 	
 	Object super;
 	int active;
-	int period;
-	int volume;
-	int currentDACState;	// contains information about last sent info to 
 	int delay;	 //	delay between each note , should shorten the note 
 	int beatLength;	// duration a note is played 
 	int pointer;
+	int key;
+	int notes[32];
+	int noteLenght[32];
 	
 } Walkman;
 
-Walkman player = { initObject(), 0, 0, 0, 0, 0, 0};
+Walkman player = { initObject(), 0, 0, 0, 0, 0};
 
 
 void startStopPlayer(Walkman *self ,int active);
-int getPlayerActiveStatus(Walkman *self, int unused);
 void setBeatLength(Walkman *self ,int beatLength);
-int getBeatLength(Walkman *self,int unused);
 void setDelay(Walkman *self,int delay);
-int getDelay(Walkman *self,int unused);
-void setPeriod(Walkman *self,int period);
-int getPeriod(Walkman *self,int unused);	 
-void changeVolume(Walkman *self,int volume); // 
-void playNext(Walkman *self,int unused);  // after
-
+void playNext(Walkman *self,int unused);
+void setKey(Walkman *self, int key);
 
 
 
@@ -78,6 +66,22 @@ void handleInput(App *self, int key); 	// som din gamla create integer använd i
 void storeDigit(App *self, int digit);
 void printPeriods(App *self, int key);
 void printPlayerChanges(App *self, int key);  // prints changes in vol,period.. etc
+
+
+
+
+typedef struct {
+	Object super;
+	int period;
+	int volume;
+	int currentDacState;
+} ToneGenerator;
+
+ToneGenerator tonegenerator = {initObject(), 0, 1, 0};
+
+void changeVolume(ToneGenerator *self,int volume);
+void setPeriod(ToneGenerator *self,int period); 
+
 
 
 
@@ -128,24 +132,18 @@ int main() {
 
 // app functions
 
-void handleInput(App *self, int key){
+void handleInput(App *self, int ikey){
 	
-	// handles numbers
-	self->changeToValue = atoi(self->buffer);
-	if (key == '-' && self->digitPointer ){	
-		
+	char key = (char) ikey;
+	
+	if (key == '-' && (self->digitPointer == 0) ){	
 		self->buffer[self->digitPointer] = key ;
 		self->digitPointer ++ ;
-		
-	}else if ( self->changeToValue <= 9 && self->changeToValue >= 0 ){		// Do I really need to typecast here?
-
+	}else if ( key <= 57 && key >= 48 ){	// ASCI CODE FOR [0,9] 	
 		self->buffer[self->digitPointer] = key ;
 		self->digitPointer ++ ;
-		// updates integerversion of number
-		// change later		
-		snprintf(self->buffer,MAX_INTEGER_SIZE,"%d", self->changeToValue);		// NTS: Tänk på att inte ha space mellan , och max-storlek för att slippa dryga varningar
-
 	}
+	
 	
 	// player bindings
 	// takes stored number and sends to different walkman functions,
@@ -154,10 +152,11 @@ void handleInput(App *self, int key){
 
 	
 	switch (key){
-		
+	
 		case('v'):
 		// store value as integer
 		self->changeToValue = atoi(self->buffer);
+
 		// check if valid volume
 		if(self->changeToValue <20 && self->changeToValue > 0){
 			
@@ -166,93 +165,85 @@ void handleInput(App *self, int key){
 			
 			
 			//write new volume in consol
-			SCI_WRITE(&sci0, "New volume");
+			SCI_WRITE(&sci0, "New volume: ");
 			SCI_WRITE(&sci0, self->buffer);						
-			SCI_WRITE(&sci0, "\'\n");		
+			SCI_WRITE(&sci0, "\n");		
 			self->digitPointer = 0;			
 			
 			}else{
 				//write error message
 				SCI_WRITE(&sci0, "Please use a value within the interval (0,20) \n");
-				SCI_WRITE(&sci0, "you used value:");	
-				SCI_WRITE(&sci0, self->buffer);	
+				SCI_WRITE(&sci0, "you used value: ");	
+				SCI_WRITE(&sci0, self->buffer);
+				SCI_WRITE(&sci0, "\n");
+			
 			}
-		
 		break;
 		
 		case('a'):
 		
-		/* To start or stop player there is no need to send any special value,
-		 if player is started, same binding will stop player */
-		
-		ASYNC(&player, startStopPlayer, self->buffer);
-		
-		// Track player status in current obj
-		
-		if(self->playerActiveStatus){			
-			self->playerActiveStatus = 0;			
-		}else{
-			self->playerActiveStatus = 1;
-		}
-		
-		// print in terminal
+			/* To start or stop player there is no need to send any special value,
+			 if player is started, same binding will stop player */
 			
-		snprintf(self->buffer,MAX_INTEGER_SIZE,"%d", self->playerActiveStatus);		
-		SCI_WRITE(&sci0, "active status: \'");
-		SCI_WRITE(&sci0, self->buffer);						
-		SCI_WRITE(&sci0, "\'\n");
+			ASYNC(&player, startStopPlayer, self->buffer);
+			
+			// Track player status in current obj
+			
+			if(self->playerActiveStatus){			
+				self->playerActiveStatus = 0;			
+			}else{
+				self->playerActiveStatus = 1;
+			}
+			
+			// print in terminal
+				
+			snprintf(self->buffer,MAX_INTEGER_SIZE,"%d", self->playerActiveStatus);		
+			SCI_WRITE(&sci0, "active status: \'");
+			SCI_WRITE(&sci0, self->buffer);						
+			SCI_WRITE(&sci0, "\'\n");		
+		break;
 		
+		case('k'):
+
+			self->changeToValue = atoi(self->buffer);
+			if(self->changeToValue <= 5 && self->changeToValue){
+				ASYNC(&player,setKey, self->changeToValue);
+				SCI_WRITE(&sci0, "playing in key: ");
+				SCI_WRITE(&sci0, self->buffer);						
+				SCI_WRITE(&sci0, "\n");	
+				self->digitPointer = 0;
+			}else{
+				SCI_WRITE(&sci0, "please use a value within [0,5] \n ");
+
+			}
+			
 		break;
 		
 		case('b'):
-		ASYNC(&player, setBeatLength, key);
-		SYNC(&player, printPlayerChanges, key);
-		break;
-		
-		case('p'):
-		ASYNC(&player, setPeriod, key);
-		SYNC(&player, printPlayerChanges, key);
-		break; 
-		
+			self->changeToValue = atoi(self->buffer);
+			if(self->changeToValue >= 0){
+			ASYNC(&player,setBeatLength, self->changeToValue);
+			SCI_WRITE(&sci0, "New beatlength in milliseconds: ");
+			SCI_WRITE(&sci0, self->buffer);						
+			SCI_WRITE(&sci0, "\n");	
+			self->digitPointer = 0;
+			}else{
+			SCI_WRITE(&sci0, "Please use a positive value: ");	
+			}
+			break;
+				
 		case('d'):
-		ASYNC(&player, setDelay, key);
-		SYNC(&player, printPlayerChanges, key);
-		break;
-		
-	}
-}
-
-
-// Prints the value and what function the value was sent to, to the consol 
-void printPlayerChanges(App *self, int key){
-	
-	switch (key){
-		
-		case 'v':
-		    SCI_WRITE(&sci0, "Volume: \'");
-			SCI_WRITE(&sci0, self->buffer);
-			SCI_WRITE(&sci0, "\'\n");
-		break;
-		
-		
-		case 'b':
-			SCI_WRITE(&sci0, "BeatLength: \'");
-			SCI_WRITE(&sci0, self->buffer);
-			SCI_WRITE(&sci0, "\'\n");
-		break;
-		
-		case 'p':
-			SCI_WRITE(&sci0, "New period length:  \'");
-			SCI_WRITE(&sci0, self->buffer);
-			SCI_WRITE(&sci0, "\'\n");
-		break; 
-		
-		case 'd':
-			SCI_WRITE(&sci0, "Delay: \'");
-			SCI_WRITE(&sci0, self->buffer);
-			SCI_WRITE(&sci0, "\'\n");
-		break;
-	
+			self->changeToValue = atoi(self->buffer);
+			if(self->changeToValue >= 0){
+			ASYNC(&player,setBeatLength, self->changeToValue);
+			SCI_WRITE(&sci0, "New deadline in milliseconds: ");
+			SCI_WRITE(&sci0, self->buffer);						
+			SCI_WRITE(&sci0, "\n");	
+			self->digitPointer = 0;
+			}else{
+			SCI_WRITE(&sci0, "Please use a positive value: ");	
+			}
+			break;
 	}
 }
 
@@ -266,28 +257,25 @@ void startStopPlayer(Walkman *self, int unused){
 	}
 }
 
-void storeDigit(App *self, int digit){
-	
-}
-
 void setDelay(Walkman *self, int delay){
 	self -> delay = delay;
-}
-
-int getPlayerActiveStatus(Walkman *self, int unused){
-	return(self->active); 
-}
-
-void changeVolume(Walkman *self,int volume){
-	if(volume > 0 && volume < 20)
-		self -> volume = volume;
 }
 
 void setBeatLength(Walkman *self, int bl){
 	self -> beatLength = bl;
 }
 
-void setPeriod(Walkman *self, int period){
+void setKey(Walkman *self, int key){
+	self->key = key;
+}
+
+// tonegenerator functions
+
+void setPeriod(ToneGenerator *self, int period){
 	self -> period = period;
 }
 
+void changeVolume(ToneGenerator *self,int volume){
+	if(volume > 0 && volume < 20)
+		self -> volume = volume;
+}

@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="C:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber\TinyTimber.workspace">
+<Session Name="C:\Users\Jmsar\Documents\programming\TinyTimber\TinyTimber.workspace">
   <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber\TinyTimber.workspace" Name="m_workspaceName"/>
+  <wxString Value="C:\Users\Jmsar\Documents\programming\TinyTimber\TinyTimber.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\Jmsar\Documents\Skola\Realtidssystem\TinyTimber\application.c" Name="FileName"/>
-      <int Value="131" Name="FirstVisibleLine"/>
-      <int Value="188" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Jmsar\Documents\programming\TinyTimber\application.c" Name="FileName"/>
+      <int Value="255" Name="FirstVisibleLine"/>
+      <int Value="276" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds">
-        <IntVectorItem Value="86"/>
-        <IntVectorItem Value="93"/>
-        <IntVectorItem Value="101"/>
-        <IntVectorItem Value="120"/>
-        <IntVectorItem Value="260"/>
-        <IntVectorItem Value="272"/>
-        <IntVectorItem Value="276"/>
-        <IntVectorItem Value="280"/>
-        <IntVectorItem Value="285"/>
-        <IntVectorItem Value="289"/>
-      </IntVector>
+      <IntVector Name="CollapsedFolds"/>
     </TabInfo>
   </TabInfoArray>
   <SerializedObject Name="m_breakpoints">
